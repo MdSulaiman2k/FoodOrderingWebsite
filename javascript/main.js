@@ -20,9 +20,69 @@ var  img = "C:/Users/mohamedsulaiman/Documents/webdevelopment/foodService/images
       description : "Chicken Tikka, Chicken Malai Tikka, Onion, Red Paprika"
     }
 
-  }
+  },
+  cake : {
+       Strawberrycake  : {
+       name  : "Strawberry Cake" ,
+       image : "cake.jpg" ,
+       rupee : 350 ,
+       description : "Cake Flavour- Strawberry Type of Cake- Cream CakeWeight- Half KgShape- RoundServes- 4-6 PeopleSize- 6 Inches in Diameter"
+      },
+      chocolatecake : {
+       name  : "Chocolate Cake" ,
+       image : "cake2.jpg" ,
+       rupee : 300 ,
+       description : "Cake Flavour- Chocolate Type of Cake-Cream CakeWeight"
+     },
+     chcake : {
+       name  : "Chocolate cake" ,
+       image : "cake4.jpg" ,
+       rupee : 230 ,
+       description : "Cake Flavour- Chocolate"
 
- };
+     }
+ },
+ chicken :{
+      tanchicken : {
+        name  : "Tandoori Chicken" ,
+       image : "tandoori.jpg" ,
+       rupee : 400 ,
+       description : "Casual Dining - Chinese, North Indian, South Indian, BBQ, Seafood, Beverages"
+      },
+      chicken : {
+        name  : "Chicken Tikka" ,
+       image : "tandoori2.jpg" ,
+       rupee : 450 ,
+       description : "North Indian, South Indian, BBQ, Seafood, Beverages"
+      },
+      tandoori : {
+        name  : "Chicken 65" ,
+       image : "tandoori4.jpg" ,
+       rupee : 380 ,
+       description : "A classic Indian dinner that marinates chicken legs in a creamy yogurt base, blended spice ..."
+      }
+ },
+ biriyani :{
+      chickenBiriyani : {
+        name  : "Chicken Biriyani" ,
+       image : "biriyani2.jpg" ,
+       rupee : 245 ,
+       description : "Casual Dining - Chinese, North Indian, South Indian, Biriyani, Seafood, Beverages"
+      },
+      Biriyanichicken : {
+        name  : "Chicken Biriyani" ,
+       image : "biriyani1.jpg" ,
+       rupee : 220 ,
+       description : "North Indian, South Indian, Biriyani, Beverages"
+      },
+      tandoori : {
+        name  : "Spicy Chicken Biriyani" ,
+       image : "biriyani.jpg" ,
+       rupee : 250 ,
+       description : "A classic Indian Lunch that marinates chicken legs in a creamy yogurt base, blended spice ..."
+      }
+ }
+};
 
  function search() {
  	     clr = document.querySelector("#search").style.color 
