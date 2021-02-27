@@ -75,11 +75,51 @@ var  img = "C:/Users/mohamedsulaiman/Documents/webdevelopment/foodService/images
        rupee : 220 ,
        description : "North Indian, South Indian, Biriyani, Beverages"
       },
-      tandoori : {
+      ChBiriyani : {
         name  : "Spicy Chicken Biriyani" ,
        image : "biriyani.jpg" ,
        rupee : 250 ,
        description : "A classic Indian Lunch that marinates chicken legs in a creamy yogurt base, blended spice ..."
+      }
+ },
+ icecream:{
+      Strawberryicecream : {
+        name  : "Strawberry icecream" ,
+       image : "icecream1.jpg" ,
+       rupee : 75 ,
+       description : "Make you feel cool"
+      },
+     Chocolateicecream : {
+        name  : "Chocolate IceCream" ,
+       image : "icecream.jpg" ,
+       rupee : 120 ,
+       description : "Rich, ultra-creamy and chocolatey"
+      },
+      Venila  : {
+        name  : "Venila IceCream" ,
+       image : "icecream2.jpg" ,
+       rupee : 75 ,
+       description : "Vanilla ice cream with chocolate sauce"
+      }
+ },
+ shawarma:{
+      chickshawarma : {
+        name  : "Chicken Shawarma" ,
+       image : "swarma.jpg" ,
+       rupee : 145 ,
+       description : "Casual Dining - Chinese, North Indian, South Indian, BBQ, Seafood, Beverages"
+      },
+      chickenshawar : {
+        name  : "Spicy.shawarma" ,
+       image : "shawarma.jpg" ,
+       rupee : 150 ,
+       description : "North Indian, South Indian, BBQ, Seafood, Beverages"
+      },
+      tandoori : {
+        name  : "Chickent Hot Shawarma" ,
+       image : "shawarma1.jpg" ,
+       rupee : 200 ,
+       description : "A classic Indian dinner that marinates chicken crispy in a creamy yogurt base, blended spice ..."
       }
  }
 };
