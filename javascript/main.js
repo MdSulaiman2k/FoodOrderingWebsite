@@ -1,4 +1,8 @@
-var  img = "C:/Users/mohamedsulaiman/Documents/webdevelopment/foodService/images/"
+var  img = "../images/" ;
+var total = 0 ;
+
+var totcnt = 0 ;
+var cnt = [0 , 0 , 0 , 0 , 0, 0 , 0, 0 ,0 ]
  var fooditems = {
   pizza : {
     vegpizza : {
@@ -174,5 +178,36 @@ var  img = "C:/Users/mohamedsulaiman/Documents/webdevelopment/foodService/images
                }
          }
       });
+
+  });
+
+  $("button").click(function(){
+      var val = this.className ;
+      var ind = parseInt(this.id.substring(4) )-1 ;
+      if(val == "add" || val == "btn")
+        {
+           var i = "#minu" + this.id.substring(4) ;
+           $(i).css("display" , "inline-block") ;
+           totcnt++ ;
+           cnt[ind]++;
+           alert(totcnt)
+           $(".cart").css("display" , "inline-block") ;
+           $("#addi"+(ind+1)).html(cnt[ind])
+
+
+           
+        }
+      else{
+        totcnt-- ;
+        cnt[ind]--;
+        if(cnt[ind] == 0){
+           $("#"+this.id).css("display" , "none")  ;
+        }
+        if(totcnt == 0){
+          $(".cart").css("display" , "none") ;
+        }
+        alert(totcnt)
+         $("#addi"+(ind+1)).html("Add")
+      }
 
   });

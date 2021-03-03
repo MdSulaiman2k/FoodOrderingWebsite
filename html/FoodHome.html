@@ -33,7 +33,7 @@
 </div>
 	<div id="hide" class = "hide" >
 		<div id="searchbox">
-			<img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\search1.jpg" style="margin-top:10px;width:30px;height:40px;position:absolute;margin-left:20px;">
+			<img src="..\images\search1.jpg" style="margin-top:10px;width:30px;height:40px;position:absolute;margin-left:20px;">
 			<input type="search" id="sear" name="search" placeholder="Search for dish" class="inputsearch" />
 		</div>
 	</div>
@@ -42,82 +42,141 @@
 	<div class="item">
 	  <span class= "fooditem2">
       <span class= "fooditem">
-      	  <img  src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\biriyani.jpg" class="food" id="food1">
+      	  <img  src="..\images\biriyani.jpg" class="food" id="food1">
       	  <div class= "foodhead" id="foodhead1">Chicken Biriyani</div>
       	  <div class="foodbody" id="foodbody1">Biryani, Mughlai, Kebabs, Hyderabadi, North Indian, Persian, Desserts
 Mudichur Road, West Tambaram</div>
-         <div class="foodprice" id="foodprice1">Rs: 165</div>
+         <div class="foodprice" id="foodprice1">&#x20B9 165</div>
+         <div id="addcart">
+          <button id="minu1" class="min">-</button>
+          <button class="btn" id="addi1">Add </button>
+          <button id="plus1" class= "add">+</button>
+        </div>
+
       </span></span>
       <span class= "fooditem2">
        <span class= "fooditem">
-       	 <img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\swarma.jpg" class="food" id="food2">
+       	 <img src="..\images\swarma.jpg" class="food" id="food2">
        	 <div class= "foodhead" id="foodhead2">Chicken Shawarma </div>
        	  <div class="foodbody" id="foodbody2"> Indian, Chinese, Grill, Tandoor, Kebabs
 Thambaram, West Tambaram</div>
-        <div class="foodprice" id="foodprice2">Rs: 125</div>
+        <div class="foodprice" id="foodprice2">&#x20B9 125</div>
+         <div id="addcart">
+          <button id="minu2" class="min">-</button>
+          <button class="btn" id="addi2">Add </button>
+          <button id="plus2" class= "add">+</button>
+        </div>
        </span></span>
        <span class= "fooditem2">
         <span class= "fooditem">
-        	<img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\tandoori.jpg" class="food" id="food3">
+        	<img src="..\images\tandoori.jpg" class="food" id="food3">
         	<div class= "foodhead" id="foodhead3">Chicken Tandoori</div>
         	<div class="foodbody" id="foodbody3">Indian, Chinese, Grill, Tandoor, Kebabs
 Thambaram, West Tambaram</div>
-            <div class="foodprice" id="foodprice3">Rs:205</div>
+            <div class="foodprice" id="foodprice3">&#x20B9 205</div>
+             <div id="addcart">
+          <button id="minu3" class="min">-</button>
+          <button class="btn" id="addi3">Add </button>
+          <button id="plus3" class= "add">+</button>
+        </div>
 
         </span></span>
+        <span id="cart" class="cart">
+          <h1 class="carthead" >Cart</h1>
+          <div id="cartitems" >
+          <p id="it"></p>
+          <div id="itemsamount">
+             <p id="itemname">Chicken 65</p>
+             <button id="s">-</button><button id="cnt">add</button><button id="p">+</button>
+             <p id="itemprice">&#x20B9 199</p>
+          </div>
+          <h3 id="itemtotal" style="text-align:left;display:inline-block;margin-left: 25px; font-family: 'Roboto', sans-serif; ">Subtotal</h3>
+          <h4 id="totalamount" style="text-align:right;display:inline;margin-left: 20px; font-family: 'Roboto', sans-serif;position:absolute;right:50px;">&#x20B9  </h4>
+          </div>
+        </span>
 
 	</div>
 	<div class="item">
 	  <span class= "fooditem2">
       <span class= "fooditem">
-      	  <img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\pizza2.jpg" class="food">
-      	  <div class= "foodhead">Veg.Pizza</div>
-      	  <div class="foodbody">Dealious veg Pizza</div>
-         <div class="foodprice">Rs: 165</div>
+      	  <img src="..\images\pizza2.jpg" class="food">
+      	  <div class= "foodhead" id="foodhead4">Veg.Pizza</div>
+      	  <div class="foodbody" id="foodbody4">Dealious veg Pizza</div>
+         <div class="foodprice" id="foodprice4">&#x20B9 165</div>
+          <div id="addcart">
+          <button id="minu4" class="min">-</button>
+          <button class="btn" id="addi4">Add </button>
+          <button id="plus4" class= "add">+</button>
+        </div>
       </span></span>
       <span class= "fooditem2">
        <span class= "fooditem">
-       	 <img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\tandoori2.jpg" class="food">
-       	 <div class= "foodhead">Chicken Tandoori</div>
-       	  <div class="foodbody"> Indian, Chinese, Grill, Tandoor, Kebabs
+       	 <img src="..\images\tandoori2.jpg" class="food">
+       	 <div class= "foodhead" id="foodhead5">Chicken Tandoori</div>
+       	  <div class="foodbody" id="foodbody5"> Indian, Chinese, Grill, Tandoor, Kebabs
 Thambaram, West Tambaram</div>
-        <div class="foodprice">Rs: 125</div>
+        <div class="foodprice" id="foodprice5">&#x20B9 125</div>
+         <div id="addcart">
+          <button id="minu5" class="min">-</button>
+          <button class="btn" id="addi5">Add </button>
+          <button id="plus5" class= "add">+</button>
+        </div>
        </span></span>
        <span class= "fooditem2">
         <span class= "fooditem">
-        	<img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\biriyani3.jpg" class="food">
-        	<div class= "foodhead">Bamboo Chicken Biriyani</div>
-        	<div class="foodbody">Indian Bamboo Chicken Biriyani</div>
-            <div class="foodprice">Rs:245</div>
+        	<img src="..\images\biriyani3.jpg" class="food">
+        	<div class= "foodhead" id="foodhead6">Bamboo Chicken Biriyani</div>
+        	<div class="foodbody" id="foodbody6">Indian Bamboo Chicken Biriyani</div>
+            <div class="foodprice" id="foodprice6">&#x20B9 245</div>
+             <div id="addcart">
+          <button id="minu6" class="min">-</button>
+          <button class="btn" id="addi6">Add </button>
+          <button id="plus6" class= "add">+</button>
+        </div>
         </span></span>
-
+       
 	</div>
 	<div class="item">
 	  <span class= "fooditem2">
       <span class= "fooditem">
-      	  <img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\icecream.jpg" class="food">
-      	  <div class= "foodhead">Strawberry Ice</div>
-      	  <div class="foodbody">Strawberry Ice cream</div>
-         <div class="foodprice">Rs: 51</div>
+      	  <img src="..\images\icecream.jpg" class="food">
+      	  <div class= "foodhead" id="foodhead7">Strawberry Ice</div>
+      	  <div class="foodbody" id="foodbody7">Strawberry Ice cream</div>
+         <div class="foodprice" id="foodprice7">&#x20B9 51</div>
+          <div id="addcart">
+          <button id="minu7" class="min">-</button>
+          <button class="btn" id="addi7">Add </button>
+          <button id="plus7" class= "add">+</button>
+        </div>
       </span></span>
       <span class= "fooditem2">
        <span class= "fooditem">
-       	 <img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\pizza.jpg" class="food">
-       	 <div class= "foodhead">Chicken Pizza</div>
-       	  <div class="foodbody">Chicken Pizza  </div>
-        <div class="foodprice">Rs: 225</div>
+       	 <img src="..\images\pizza.jpg" class="food">
+       	 <div class= "foodhead" id="foodhead8">Chicken Pizza</div>
+       	  <div class="foodbody" id="foodbody8">Chicken Pizza  </div>
+        <div class="foodprice" id="foodprice8">&#x20B9 225</div>
+         <div id="addcart">
+          <button id="minu8" class="min">-</button>
+          <button class="btn" id="addi8">Add </button>
+          <button id="plus8" class= "add">+</button>
+        </div>
        </span></span>
        <span class= "fooditem2">
         <span class= "fooditem">
-        	<img src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\cake4.jpg" class="food">
-        	<div class= "foodhead">Creamy Forest Cake</div>
-        	<div class="foodbody">creamy cake</div>
-            <div class="foodprice">Rs:305</div>
+        	<img src="..\images\cake4.jpg" class="food">
+        	<div class= "foodhead" id="foodhead9">Creamy Forest Cake</div>
+        	<div class="foodbody" id="foodbody9">creamy cake</div>
+            <div class="foodprice" id="foodprice9">&#x20B9 305</div>
+             <div id="addcart">
+          <button id="minu9" class="min">-</button>
+          <button class="btn" id="addi9">Add </button>
+          <button id="plus9" class= "add">+</button>
+        </div>
         </span></span>
 
 	</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\javascript\main.js">
+   <script src="..\javascript\main.js">
    	 
    </script>
 </body>
