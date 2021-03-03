@@ -3,6 +3,7 @@ var total = 0 ;
 
 var totcnt = 0 ;
 var cnt = [0 , 0 , 0 , 0 , 0, 0 , 0, 0 ,0 ]
+var amt  = [0, 0, 0, 0, 0, 0, 0, 0, 0]
  var fooditems = {
   pizza : {
     vegpizza : {
@@ -168,6 +169,7 @@ var cnt = [0 , 0 , 0 , 0 , 0, 0 , 0, 0 ,0 ]
                                  $("#foodprice"+cnt).html("Rs:" + obj2[k]) ;
                               else if(k == "description")
                                   $("#foodbody"+cnt).html(obj2[k]) ;
+
                          }
                          cnt++ ;
 
@@ -181,6 +183,14 @@ var cnt = [0 , 0 , 0 , 0 , 0, 0 , 0, 0 ,0 ]
 
   });
 
+  function getTotal(){
+      var total = 0 ;
+      for( i = 0 ; i < cnt.length ; i++ ){
+            total = total + cnt[i] * amt[i] ;
+      }
+      return total;
+  }
+
   $("button").click(function(){
       var val = this.className ;
       var ind = parseInt(this.id.substring(4) )-1 ;
@@ -190,24 +200,45 @@ var cnt = [0 , 0 , 0 , 0 , 0, 0 , 0, 0 ,0 ]
            $(i).css("display" , "inline-block") ;
            totcnt++ ;
            cnt[ind]++;
-           alert(totcnt)
-           $(".cart").css("display" , "inline-block") ;
-           $("#addi"+(ind+1)).html(cnt[ind])
-
-
            
+           $(".cart").css("display" , "inline-block") ;
+           $("#addi"+(ind+1)).html(cnt[ind]) 
+           if(cnt[ind] == 1){
+              
+              var html = '\
+                  <div id="price' +(ind+1)+'">\
+                         <p id="itemname">'+$("#foodhead"+ (ind+1)).text() +'</p>\
+                        <button id="cnti' + (ind+1) + '" class="btn">1</button>\
+                         <p id="itemprice">' +$("#foodprice"+(ind+1)).text()+'</p>\
+                         <div>' ;
+              document.getElementById('itemsamount').insertAdjacentHTML('beforeend' ,html);
+              amt[ind] = parseInt($("#foodprice"+(ind+1)).text().substring(1)) ;
+
+        }
+        else{
+          $("#cnti"+(ind+1)).html(cnt[ind]) 
+        }
+          $("#totalamount").html("&#x20B9" +" "+ getTotal() )
         }
       else{
         totcnt-- ;
         cnt[ind]--;
         if(cnt[ind] == 0){
            $("#"+this.id).css("display" , "none")  ;
+           $("#addi"+(ind+1)).html("Add") ;
+           $('#price'+(ind+1)).css("display" , "none") ;
+           amt[ind] = 0 ; 
+        }
+        else{
+          $("#addi"+(ind+1)).html(cnt[ind]);
+          $("#cnti"+(ind+1)).html(cnt[ind]) 
         }
         if(totcnt == 0){
           $(".cart").css("display" , "none") ;
         }
-        alert(totcnt)
-         $("#addi"+(ind+1)).html("Add")
+         
+        $("#totalamount").html("&#x20B9" +" "+ getTotal() )
+         
       }
 
   });

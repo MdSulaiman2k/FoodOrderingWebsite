@@ -216,7 +216,7 @@ img.top:hover{
 }
 
 .carthead{
-      display: inline-block;
+    display: inline-block;
     margin-left: 20px;
     font-family: 'Roboto', sans-serif; 
     font-size: 32px;
@@ -227,6 +227,7 @@ img.top:hover{
     display: block; ;
 }
 #itemsamount{
+     width :330px;
      overflow: scroll;
      overflow-x: hidden; 
      height: 300px;
