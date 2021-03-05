@@ -233,6 +233,77 @@ img.top:hover{
      height: 300px;
 }
 
+.onoffswitch {
+    position: relative; width: 135px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    left : 690px;
+    top : -35px;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 17px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 33px; padding: 0; line-height: 33px;
+    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:after {
+    content: "Veg";
+    padding-left: 39px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:before {
+    content: "Non-Veg";
+    padding-right: 40px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 7.5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 98px;
+    border: 2px solid #999999; border-radius: 17px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+#subtn {
+ background-color:#599bb3;
+    border-radius:8px;
+    border:2px solid #29668f;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Courier New;
+    font-size:20px;
+    font-weight:bold;
+    padding:15px 76px;
+    text-decoration:none;
+    text-shadow:0px 0px 0px #3d768a;
+    margin-left : 24px;
+}
+
+#subtn:hover {
+     border-color: white ;
+     background-color:#60b246;
+}
+
 #itemname{
     display: inline-block;
     margin-left : 20px;

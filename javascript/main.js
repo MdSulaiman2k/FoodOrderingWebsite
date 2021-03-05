@@ -194,6 +194,7 @@ var amt  = [0, 0, 0, 0, 0, 0, 0, 0, 0]
   $("button").click(function(){
       var val = this.className ;
       var ind = parseInt(this.id.substring(4) )-1 ;
+      var i = 1
       if(val == "add" || val == "btn")
         {
            var i = "#minu" + this.id.substring(4) ;
@@ -204,11 +205,10 @@ var amt  = [0, 0, 0, 0, 0, 0, 0, 0, 0]
            $(".cart").css("display" , "inline-block") ;
            $("#addi"+(ind+1)).html(cnt[ind]) 
            if(cnt[ind] == 1){
-              
               var html = '\
-                  <div id="price' +(ind+1)+'">\
+                  <div class="price' +(parseInt(ind)+1)+'">\
                          <p id="itemname">'+$("#foodhead"+ (ind+1)).text() +'</p>\
-                        <button id="cnti' + (ind+1) + '" class="btn">1</button>\
+                        <button class="cnti' + (ind+1) + '" class="btn">1</button>\
                          <p id="itemprice">' +$("#foodprice"+(ind+1)).text()+'</p>\
                          <div>' ;
               document.getElementById('itemsamount').insertAdjacentHTML('beforeend' ,html);
@@ -216,22 +216,22 @@ var amt  = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
         }
         else{
-          $("#cnti"+(ind+1)).html(cnt[ind]) 
+          $(".cnti"+(ind+1)).html(cnt[ind]) 
         }
           $("#totalamount").html("&#x20B9" +" "+ getTotal() )
         }
-      else{
+      else if(val == "min"){
         totcnt-- ;
         cnt[ind]--;
         if(cnt[ind] == 0){
            $("#"+this.id).css("display" , "none")  ;
            $("#addi"+(ind+1)).html("Add") ;
-           $('#price'+(ind+1)).css("display" , "none") ;
+           $('.price'+(ind+1)).css("display" , "none") ;
            amt[ind] = 0 ; 
         }
         else{
           $("#addi"+(ind+1)).html(cnt[ind]);
-          $("#cnti"+(ind+1)).html(cnt[ind]) 
+          $(".cnti"+(ind+1)).html(cnt[ind]) 
         }
         if(totcnt == 0){
           $(".cart").css("display" , "none") ;
@@ -240,5 +240,38 @@ var amt  = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         $("#totalamount").html("&#x20B9" +" "+ getTotal() )
          
       }
+    
 
   });
+
+  $("document").ready(function(){
+     $("#subtn").click(function(){
+           
+     });
+  });
+
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  var expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var ca = document.cookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function delete_cookie(name) {
+  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
