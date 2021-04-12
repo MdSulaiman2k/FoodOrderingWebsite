@@ -1,0 +1,25 @@
+INSERT INTO veg_items(NAME , amount , description , imgsrc)
+VALUES
+("DhalMakhni" , 200 , "Dal Makhani is one of the most popular lentil recipes from the North Indian Punjabi cuisine made with Whole Black Lentils" , "https://www.cookwithmanali.com/wp-content/uploads/2019/04/Restaurant-Style-Dal-Makhani.jpg") ,
+("veg Pizza" , 250 , "it is an popular indo chinese version of noodles" , "https://www.whiskaffair.com/wp-content/uploads/2020/03/Hakka-Noodles-2-3.jpg") 
+("VegManchurian" , 280 , 
+"it is an popular indo chinese version of  gravy",
+"https://holycowvegan.net/wp-content/uploads/2020/03/veg-manchurian-7.jpg"),
+("Dosa" , 150 , 
+"a thin pancake or crepe, originating from South India",
+"https://www.ticklingpalates.com/wp-content/uploads/2017/02/brown-rice-dosa-recipe-1-500x500.jpg") ,
+("CholeBature" , 240 , 
+" it is a combination of chana masala and bhatura/Puri",
+"https://holycowvegan.net/wp-content/uploads/2008/10/chole-bhatura-chana-bhatura-12.jpg"),
+("Kachori" , 240 , 
+"It is a spicy deep-fried snack, originating from the India",
+"https://static.toiimg.com/thumb/57289815.cms?imgsize=643382&width=800&height=800"),
+("PannerTikkaMasala" , 240 , 
+"It is an Indian dish of marinated paneer cheese served in a spiced gravy",
+"https://static.toiimg.com/thumb/54408184.cms?imgsize=148310&width=800&height=800"),
+("MalaiPaneer" , 300 , 
+"It is a type of paneer that is based on malai.",
+"https://static.toiimg.com/thumb/61814959.cms?width=1200&height=900") ,
+("VegFriedRice" , 350 , 
+" It is a popular and flavoured rice recipe made with cooked rice, finely chopped veggies and seasoning ingredients",
+"https://craftlog.com/m/i/5428089=s1280=h960") ;

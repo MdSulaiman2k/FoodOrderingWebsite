@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="../css/create.css" rel="stylesheet"></link>
+    <title>LoginPage</title>
+</head>
+<body style="background-color :ghostwhite">
+    <span class="topcontainer">
+		<img class="top" src="..\images\logo.jpg">
+        <p id="heading">Food Service<span style="color: rgb(8, 150, 255)">.com</span></p> <p id="search" style="display: inline-block;">
+	</span>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <!-- <div class="fadeIn first">
+            <img src="" id="icon" alt="User Icon" />
+          </div> -->
+      
+          <!-- Login Form -->
+          <form action="FoodHome.html" method="post">
+            <input type="text" required  autocomplete="off" id="name" class="fadeIn second" name="name" placeholder="Full Name">
+            <input type="tel" required  autocomplete="off" id="name" class="fadeIn second" name="name" placeholder="Phonenumber">
+            <input type="email" required autocomplete="off" id="login" class="fadeIn second" name="mail" placeholder="Email">
+            <input type="password" required autocomplete="off" id="password" class="fadeIn third" name="pass" placeholder="Password">
+            <input type="checkbox" id="checkbox" value="1">
+            <label>Show password</label><br>
+            <input type="password" required autocomplete="off" id="password1" class="fadeIn third" name="pass" placeholder="Re-Enter Password"><br>
+            <input type="checkbox" id="checkbox1" value="1">
+            <label>Show password</label><br><br>
+            <input type="text" required  autocomplete="off" id="name" class="fadeIn second" name="name" placeholder="Address">
+            <span id="mailverify" style="display: none;color:red">Mailid Already taken</span>
+            <span id="passverify" style="display: none;color:red">password not match</span>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="login.html">Sign in?</a>
+          </div>
+      
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../javascript/create.js"></script>
+      <!--  -->
+</body>
+</html>
+

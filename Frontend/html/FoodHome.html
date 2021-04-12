@@ -3,21 +3,27 @@
 <head>
 	<title>HOME</title>
 	<link rel="icon" type="text/css" href="https://cdn1.vectorstock.com/i/thumb-large/06/65/letter-f-wing-flag-logo-icon-design-template-vector-3900665.jpg">
-	<link rel="stylesheet" type="text/css" href="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\css\foodDesign.css">
+	<link rel="stylesheet" type="text/css" href="..\css\foodDesign.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </head>
 <body>
 	<span class="topcontainer">
-		<img class="top" src="C:\Users\mohamedsulaiman\Documents\webdevelopment\foodService\images\logo.jpg">
+		<img class="top" src="..\images\logo.jpg">
         <p id="heading">Food Service<span style="color: rgb(8, 150, 255)">.com</span></p> <p id="search" style="display: inline-block;">
-       <img id="imgsearch" src="..\images\search1.jpg" style="margin-left:570px;margin-top:10px;width:20px;height:20px;"><span onclick="search()"style="font-family:ProximaNova,Arial,Helvetica Neue,sans-serif ;cursor: pointer;margin-left: 5px;font-size:20px;">Search </span></p>
+       <img id="imgsearch" src="..\images\search1.jpg" style="margin-left:570px;margin-top:10px;width:20px;height:20px;"><span onclick="search()"style="font-family:ProximaNova,Arial,Helvetica Neue,sans-serif ;cursor: pointer;margin-left: 5px;font-size:20px;position: relative;top:6px;">Search </span></p>
            <p id="search" style="display: inline-block;">
-       <img id="signin" src="..\images\sign.png" style="margin-left:40px;margin-top:10px;width:20px;height:20px;"><span onclick="signin()"style="font-family: 'ProximaNova,Arial,Helvetica Neue,sans-serif;', cursive;cursor: pointer;margin-left: 5px;font-size:20px;">Sign In </span></p>
+       <img id="signin" src="..\images\sign.png" style="margin-left:40px;margin-top:10px;width:20px;height:20px;"><span id="signuser"  style="font-family: 'ProximaNova,Arial,Helvetica Neue,sans-serif;', cursive;cursor: pointer;margin-left: 5px;font-size:20px;position: relative;top:7px;"><a href="login.html" style="text-decoration:none;color:black;">Sign In </a></span>
+        <span id="user" style="font-family:ProximaNova,Arial,Helvetica Neue,sans-serif ;cursor: pointer;position: relative;margin-left: 5px;top:6px;font-size:20px;"></span>
+      </p>
 	</span>
     <div id= "visi">
 	<div  class ="visible">
@@ -39,16 +45,15 @@
 	</div>
 	<div class="topic">Dishes
     <div class="onoffswitch">
-  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+  <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" value="1" checked>
     <label class="onoffswitch-label" for="myonoffswitch">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
+        <span class="onoffswitch-inner" val = "1"></span>
+        <span class="onoffswitch-switch" val="2"></span>
     </label>
 </div>
-
-
   </div>
 	<hr>
+  <div class = "Container" >
 	<div class="item">
 	  <span class= "fooditem2">
       <span class= "fooditem">
@@ -102,7 +107,8 @@ Thambaram, West Tambaram</div>
           <h4 id="totalamount" style="text-align:right;display:inline;margin-left: 20px; font-family: 'Roboto', sans-serif;position:absolute;right:80px;"> </h4>
           </div>
           <div>
-            <button id="subtn">Checkout</button>
+            <form action="checkout.html">
+            <button id="subtn" type="submit">Checkout</button></form>
           </div>
         </span>
 
@@ -110,7 +116,7 @@ Thambaram, West Tambaram</div>
 	<div class="item">
 	  <span class= "fooditem2">
       <span class= "fooditem">
-      	  <img src="..\images\pizza2.jpg" class="food">
+      	  <img src="..\images\pizza2.jpg" class="food" id="food4">
       	  <div class= "foodhead" id="foodhead4">Veg.Pizza</div>
       	  <div class="foodbody" id="foodbody4">Dealious veg Pizza</div>
          <div class="foodprice" id="foodprice4">&#x20B9 165</div>
@@ -122,7 +128,7 @@ Thambaram, West Tambaram</div>
       </span></span>
       <span class= "fooditem2">
        <span class= "fooditem">
-       	 <img src="..\images\tandoori2.jpg" class="food">
+       	 <img src="..\images\tandoori2.jpg" class="food" id="food5">
        	 <div class= "foodhead" id="foodhead5">Chicken Tandoori</div>
        	  <div class="foodbody" id="foodbody5"> Indian, Chinese, Grill, Tandoor, Kebabs
 Thambaram, West Tambaram</div>
@@ -135,7 +141,7 @@ Thambaram, West Tambaram</div>
        </span></span>
        <span class= "fooditem2">
         <span class= "fooditem">
-        	<img src="..\images\biriyani3.jpg" class="food">
+        	<img src="..\images\biriyani3.jpg" class="food" id="food6">
         	<div class= "foodhead" id="foodhead6">Bamboo Chicken Biriyani</div>
         	<div class="foodbody" id="foodbody6">Indian Bamboo Chicken Biriyani</div>
             <div class="foodprice" id="foodprice6">&#x20B9 245</div>
@@ -150,7 +156,7 @@ Thambaram, West Tambaram</div>
 	<div class="item">
 	  <span class= "fooditem2">
       <span class= "fooditem">
-      	  <img src="..\images\icecream.jpg" class="food">
+      	  <img src="..\images\icecream.jpg" class="food" id="food7">
       	  <div class= "foodhead" id="foodhead7">Strawberry Ice</div>
       	  <div class="foodbody" id="foodbody7">Strawberry Ice cream</div>
          <div class="foodprice" id="foodprice7">&#x20B9 51</div>
@@ -162,7 +168,7 @@ Thambaram, West Tambaram</div>
       </span></span>
       <span class= "fooditem2">
        <span class= "fooditem">
-       	 <img src="..\images\pizza.jpg" class="food">
+       	 <img src="..\images\pizza.jpg" class="food" id="food8" >
        	 <div class= "foodhead" id="foodhead8">Chicken Pizza</div>
        	  <div class="foodbody" id="foodbody8">Chicken Pizza  </div>
         <div class="foodprice" id="foodprice8">&#x20B9 225</div>
@@ -174,7 +180,7 @@ Thambaram, West Tambaram</div>
        </span></span>
        <span class= "fooditem2">
         <span class= "fooditem">
-        	<img src="..\images\cake4.jpg" class="food">
+        	<img src="..\images\cake4.jpg" class="food"  id="food9">
         	<div class= "foodhead" id="foodhead9">Creamy Forest Cake</div>
         	<div class="foodbody" id="foodbody9">creamy cake</div>
             <div class="foodprice" id="foodprice9">&#x20B9 305</div>
@@ -186,6 +192,7 @@ Thambaram, West Tambaram</div>
         </span></span>
 
 	</div>
+  </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="..\javascript\main.js">
    	 
